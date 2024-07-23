@@ -1,0 +1,102 @@
+/*
+Template Name: Manufacture
+File: Layout CSS
+Author: TemplatesOnWeb
+Author URI: https://www.templateonweb.com/
+Licence: <a href="https://www.templateonweb.com/license">Website Template Licence</a>
+*/
+
+/*********************blog****************/
+.main_blog{
+background-image: url(../img/14.jpg);
+background-position: center;
+}
+
+.blog_1l1ir ul li a{
+background:#f4f4f4; 
+ }
+.blog_1l1ir ul li a i{
+color:#111; 
+ }
+.blog_1r1 ul li a {
+padding: 7px 10px;
+background: #f9f9f9;
+display: block;
+margin: 3px 2px 3px 0;
+border-radius: 5px;
+transition: 0.3s;
+}
+.blog_1r1 ul li a:hover {
+background-color: #fa4318;
+color: #fff;
+}
+
+.main_blog_dt{
+background-image: url(../img/18.jpg);
+background-position: center;
+}
+.blog_1dt1i {
+border-left: 3px solid #fa4318;
+}
+/*********************blog_end****************/
+
+
+@media screen and (max-width : 767px){
+.blog_1l1ir   {
+text-align:left!important;
+margin-top:15px; 
+ }
+.blog_1r{
+margin-top:15px;  
+ }
+
+.list_1dt2i  img{
+margin-top:10px; 
+ }
+.blog_1dt3  h3{
+text-align:center; 
+ }
+.blog_1dt3ir{
+margin-top:15px;
+text-align:center;   
+ }
+.blog_1dt3ir p{
+text-align:left;   
+ }
+.blog_1dt4  h3{
+text-align:center; 
+ }
+.contact_1ril {
+margin-top:10px; 
+ }
+.contact_1ril h6{
+text-align:center;
+ }
+ }
+
+@media (min-width:576px) and (max-width:767px) {
+.blog_1dt3ir{
+margin-top:0;
+text-align:left;   
+ }
+ }
+@media (min-width:768px) and (max-width:991px) {
+.blog_1l1il h5{
+font-size:14px; 
+ }
+.blog_1l1ir ul li  {
+margin-top:3px;
+margin-bottom:3px;
+}
+
+ }
+
+@media (min-width:992px) and (max-width:1200px) {
+
+ }
+@media (min-width:1201px) and (max-width:1300px) {
+
+ }
+
+
+

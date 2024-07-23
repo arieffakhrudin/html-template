@@ -1,0 +1,234 @@
+/*
+Template Name: Manufacture
+File: Layout CSS
+Author: TemplatesOnWeb
+Author URI: https://www.templateonweb.com/
+Licence: <a href="https://www.templateonweb.com/license">Website Template Licence</a>
+*/
+
+/*********************about****************/
+.main_about{
+background-image: url(../img/23.jpg);
+background-position: center;
+}
+/*********************about_end****************/
+
+/*********************team****************/
+.team_h1i1 ul{
+background:#111;
+border-radius:30px;
+padding:10px;
+ }
+.team_h1i1 ul li{
+display:block;
+margin-top:5px;
+margin-bottom:5px; 
+ }
+.team_h1i1 ul li a{
+background:#fa4318;
+width:35px;
+height:35px;
+ }
+.team_h1i1 ul li a i{
+line-height:35px;
+ }
+.team_h1i1 {
+right:20px;
+bottom:40px;
+display:none;
+ }
+.team_h1m:hover .team_h1i1{
+display:block; 
+ }
+.team_h1mo1{
+background: #111;
+padding:20px 15px;  
+ }
+
+.team_h1mo2 span{
+background: #fa4318;
+border:5px solid #fff;
+display:inline-block;
+width:45px;
+height:45px;
+line-height:36px;
+color:#fff;
+text-align:center;
+border-radius:50%;
+ }
+.team_h1mo2{
+top:-22px;
+right:20px; 
+ }
+ 
+.process_1l {
+padding: 80px 40px;
+min-height: 500px;
+}
+
+.main_team{
+background-image: url(../img/29.jpg);
+background-position: center;
+}
+.main_team_dt{
+background-image: url(../img/33.jpg);
+background-position: center;
+}
+.contact_1lil span{
+width:60px;
+height:60px;
+line-height:60px; 
+ }
+.team_dt1r .social-circle a{
+background:#111; 
+border-radius:0;
+ }
+.team_dt1r{
+min-height:410px;
+ }
+.contact_1lil .bg-light{
+background:#fde5e0!important;
+ }
+/*********************team_end****************/
+
+
+@media screen and (max-width : 767px){
+.proj_1l ul li{
+margin-top:10px;
+margin-left:5px!important; 
+margin-right:5px!important;
+ }
+.team_h1mo {
+margin-bottom:15px;  
+ }
+.process_1l  .font_50{
+font-size:30px; 
+ }
+.process_1l  {
+text-align:center;
+ }
+.process_1l p {
+text-align:left;
+ }
+.process_1l ul li{
+margin-top:10px;
+margin-left:5px!important; 
+margin-right:5px!important;
+ }
+.process_1 .pe-0{
+padding-right:12px!important
+ }
+.process_1 .ps-0{
+padding-left:12px!important
+ }
+.process_1r{
+margin-top:15px;  
+ }
+.process_1l {
+min-height:auto; 
+ }
+.process_1r img{
+height:auto; 
+ }
+.team_dt1l img{
+height:auto; 
+ }
+.team_dt1r  {
+min-height:auto;
+padding:20px!important; 
+ }
+.team_dt1r  {
+text-align:center; 
+ }
+.team_dt1lil{
+margin-top:8px;
+margin-bottom:8px; 
+ }
+.contact_1lir{
+margin-top:10px; 
+ }
+.team_dt2r{
+ margin-top:15px; 
+ }
+.team_dt2r h3{
+text-align:center; 
+ }
+ }
+
+@media (min-width:576px) and (max-width:767px) {
+
+ }
+@media (min-width:768px) and (max-width:991px) {
+.about_h2i1l span{
+font-size:40px!important; 
+ }
+.about_h2i1r h5{
+font-size:15px; 
+ }
+.about_h2i1r p{
+font-size:14px; 
+ }
+.proj_1l .button_1{
+padding-left:15px!important; 
+padding-right:15px!important; 
+ }
+.proj_1l .button_2{
+padding-left:15px!important; 
+padding-right:15px!important; 
+ }
+.process_1l .button{
+padding-left:15px!important; 
+padding-right:15px!important;
+font-size:13px; 
+ }
+.process_1l .button_2{
+padding-left:15px!important; 
+padding-right:15px!important; 
+font-size:13px; 
+ }
+.process_1l h1{
+ font-size:26px;
+ }
+.contact_1lil span {
+width: 35px;
+height: 35px;
+line-height: 35px;
+font-size:16px!important;
+}
+ }
+
+@media (min-width:992px) and (max-width:1200px) {
+.proj_1l .button_1{
+padding-left:15px!important; 
+padding-right:15px!important; 
+ }
+.proj_1l .button_2{
+padding-left:15px!important; 
+padding-right:15px!important; 
+ }
+.process_1l .button{
+padding-left:15px!important; 
+padding-right:15px!important;
+font-size:13px; 
+ }
+.process_1l .button_2{
+padding-left:15px!important; 
+padding-right:15px!important; 
+font-size:13px; 
+ }
+.process_1l h1{
+ font-size:36px;
+ }
+.contact_1lil span {
+width: 45px;
+height: 45px;
+line-height: 45px;
+font-size:18px!important;
+}
+ }
+@media (min-width:1201px) and (max-width:1300px) {
+
+ }
+
+
+
