@@ -2,1462 +2,983 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homeverse - Find your dream house</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Company Name | Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <!-- Font awesome -->
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- slick slider -->
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <!-- price picker slider -->
+  <link rel="stylesheet" type="text/css" href="css/nouislider.css">
+  <!-- Fancybox slider -->
+  <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+  <!-- Theme color -->
+  <link id="switcher" href="css/theme-color/default-theme.css" rel="stylesheet">
 
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- Main style sheet -->
+  <link href="css/style.css" rel="stylesheet">
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <!-- Google Font -->
+  <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+
 </head>
 
-<body>
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-
-    <div class="overlay" data-overlay></div>
-
-    <div class="header-top">
-      <div class="container">
-
-        <ul class="header-top-list">
-
-          <li>
-            <a href="mailto:info@homeverse.com" class="header-top-link">
-              <ion-icon name="mail-outline"></ion-icon>
-
-              <span>info@homeverse.com</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="header-top-link">
-              <ion-icon name="location-outline"></ion-icon>
-
-              <address>15/A, Nest Tower, NYC</address>
-            </a>
-          </li>
-
-        </ul>
-
-        <div class="wrapper">
-          <ul class="header-top-social-list">
-
-            <li>
-              <a href="#" class="header-top-social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="header-top-social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="header-top-social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="header-top-social-link">
-                <ion-icon name="logo-pinterest"></ion-icon>
-              </a>
-            </li>
-
-          </ul>
-
-          <button class="header-top-btn">Add Listing</button>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="header-bottom">
-      <div class="container">
-
-        <a href="#" class="logo">
-          <img src="./assets/images/logo.png" alt="Homeverse logo">
-        </a>
-
-        <nav class="navbar" data-navbar>
-
-          <div class="navbar-top">
-
-            <a href="#" class="logo">
-              <img src="./assets/images/logo.png" alt="Homeverse logo">
-            </a>
-
-            <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </div>
-
-          <div class="navbar-bottom">
-            <ul class="navbar-list">
-
-              <li>
-                <a href="#home" class="navbar-link" data-nav-link>Home</a>
-              </li>
-
-              <li>
-                <a href="#about" class="navbar-link" data-nav-link>About</a>
-              </li>
-
-              <li>
-                <a href="#service" class="navbar-link" data-nav-link>Service</a>
-              </li>
-
-              <li>
-                <a href="#property" class="navbar-link" data-nav-link>Property</a>
-              </li>
-
-              <li>
-                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-              </li>
-
-              <li>
-                <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
-              </li>
-
-            </ul>
-          </div>
-
-        </nav>
-
-        <div class="header-bottom-actions">
-
-          <button class="header-bottom-actions-btn" aria-label="Search">
-            <ion-icon name="search-outline"></ion-icon>
-
-            <span>Search</span>
-          </button>
-
-          <button class="header-bottom-actions-btn" aria-label="Profile">
-            <ion-icon name="person-outline"></ion-icon>
-
-            <span>Profile</span>
-          </button>
-
-          <button class="header-bottom-actions-btn" aria-label="Cart">
-            <ion-icon name="cart-outline"></ion-icon>
-
-            <span>Cart</span>
-          </button>
-
-          <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
-            <ion-icon name="menu-outline"></ion-icon>
-
-            <span>Menu</span>
-          </button>
-
-        </div>
-
-      </div>
-    </div>
-
-  </header>
-
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero" id="home">
-        <div class="container">
-
-          <div class="hero-content">
-
-            <p class="hero-subtitle">
-              <ion-icon name="home"></ion-icon>
-
-              <span>Real Estate Agency</span>
-            </p>
-
-            <h2 class="h1 hero-title">Find Your Dream House By Us</h2>
-
-            <p class="hero-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-            </p>
-
-            <button class="btn">Make An Enquiry</button>
-
-          </div>
-
-          <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.png" alt="Modern house model" class="w-100">
-          </figure>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="about" id="about">
-        <div class="container">
-
-          <figure class="about-banner">
-            <img src="./assets/images/about-banner-1.png" alt="House interior">
-
-            <img src="./assets/images/about-banner-2.jpg" alt="House interior" class="abs-img">
-          </figure>
-
-          <div class="about-content">
-
-            <p class="section-subtitle">About Us</p>
-
-            <h2 class="h2 section-title">The Leading Real Estate Rental Marketplace.</h2>
-
-            <p class="about-text">
-              Over 39,000 people work for us in more than 70 countries all over the This breadth of global coverage,
-              combined with
-              specialist services
-            </p>
-
-            <ul class="about-list">
-
-              <li class="about-item">
-                <div class="about-item-icon">
-                  <ion-icon name="home-outline"></ion-icon>
+<body class="aa-price-range">
+  <!-- Pre Loader -->
+  <div id="aa-preloader-area">
+    <div class="pulse"></div>
+  </div>
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-double-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start header section -->
+  <header id="aa-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-header-area">
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="aa-header-left">
+                  <div class="aa-telephone-no">
+                    <span class="fa fa-phone"></span>
+                    1-900-523-3564
+                  </div>
+                  <div class="aa-email hidden-xs">
+                    <span class="fa fa-envelope-o"></span> info@markups.com
+                  </div>
                 </div>
-
-                <p class="about-item-text">Smart Home Design</p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-item-icon">
-                  <ion-icon name="leaf-outline"></ion-icon>
-                </div>
-
-                <p class="about-item-text">Beautiful Scene Around</p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-item-icon">
-                  <ion-icon name="wine-outline"></ion-icon>
-                </div>
-
-                <p class="about-item-text">Exceptional Lifestyle</p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-item-icon">
-                  <ion-icon name="shield-checkmark-outline"></ion-icon>
-                </div>
-
-                <p class="about-item-text">Complete 24/7 Security</p>
-              </li>
-
-            </ul>
-
-            <p class="callout">
-              "Enimad minim veniam quis nostrud exercitation
-              llamco laboris. Lorem ipsum dolor sit amet"
-            </p>
-
-            <a href="#service" class="btn">Our Services</a>
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #SERVICE
-      -->
-
-      <section class="service" id="service">
-        <div class="container">
-
-          <p class="section-subtitle">Our Services</p>
-
-          <h2 class="h2 section-title">Our Main Focus</h2>
-
-          <ul class="service-list">
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-1.png" alt="Service icon">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <a href="#">Buy a home</a>
-                </h3>
-
-                <p class="card-text">
-                  over 1 million+ homes for sale available on the website, we can match you with a house you will want
-                  to call home.
-                </p>
-
-                <a href="#" class="card-link">
-                  <span>Find A Home</span>
-
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-
               </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-2.png" alt="Service icon">
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="aa-header-right">
+                  <a href="register.html" class="aa-register">Register</a>
+                  <a href="signin.html" class="aa-login">Login</a>
                 </div>
-
-                <h3 class="h3 card-title">
-                  <a href="#">Rent a home</a>
-                </h3>
-
-                <p class="card-text">
-                  over 1 million+ homes for sale available on the website, we can match you with a house you will want
-                  to call home.
-                </p>
-
-                <a href="#" class="card-link">
-                  <span>Find A Home</span>
-
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-
               </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-3.png" alt="Service icon">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <a href="#">Sell a home</a>
-                </h3>
-
-                <p class="card-text">
-                  over 1 million+ homes for sale available on the website, we can match you with a house you will want
-                  to call home.
-                </p>
-
-                <a href="#" class="card-link">
-                  <span>Find A Home</span>
-
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #PROPERTY
-      -->
-
-      <section class="property" id="property">
-        <div class="container">
-
-          <p class="section-subtitle">Properties</p>
-
-          <h2 class="h2 section-title">Featured Listings</h2>
-
-          <ul class="property-list has-scrollbar">
-
-            <li>
-              <div class="property-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/property-1.jpg" alt="New Apartment Nice View" class="w-100">
-                  </a>
-
-                  <div class="card-badge green">For Rent</div>
-
-                  <div class="banner-actions">
-
-                    <button class="banner-actions-btn">
-                      <ion-icon name="location"></ion-icon>
-
-                      <address>Belmont Gardens, Chicago</address>
-                    </button>
-
-                    <button class="banner-actions-btn">
-                      <ion-icon name="camera"></ion-icon>
-
-                      <span>4</span>
-                    </button>
-
-                    <button class="banner-actions-btn">
-                      <ion-icon name="film"></ion-icon>
-
-                      <span>2</span>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-price">
-                    <strong>$34,900</strong>/Month
-                  </div>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">New Apartment Nice View</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
-                  </p>
-
-                  <ul class="card-list">
-
-                    <li class="card-item">
-                      <strong>3</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>3450</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
-                      <span>Square Ft</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-footer">
-
-                  <div class="card-author">
-
-                    <figure class="author-avatar">
-                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
-                    </figure>
-
-                    <div>
-                      <p class="author-name">
-                        <a href="#">William Seklo</a>
-                      </p>
-
-                      <p class="author-title">Estate Agents</p>
-                    </div>
-
-                  </div>
-
-                  <div class="card-footer-actions">
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="resize-outline"></ion-icon>
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="add-circle-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="property-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/property-2.jpg" alt="Modern Apartments" class="w-100">
-                  </a>
-
-                  <div class="card-badge orange">For Sales</div>
-
-                  <div class="banner-actions">
-
-                    <button class="banner-actions-btn">
-                      <ion-icon name="location"></ion-icon>
-
-                      <address>Belmont Gardens, Chicago</address>
-                    </button>
-
-                    <button class="banner-actions-btn">
-                      <ion-icon name="camera"></ion-icon>
-
-                      <span>4</span>
-                    </button>
-
-                    <button class="banner-actions-btn">
-                      <ion-icon name="film"></ion-icon>
-
-                      <span>2</span>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-price">
-                    <strong>$34,900</strong>/Month
-                  </div>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Modern Apartments</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
-                  </p>
-
-                  <ul class="card-list">
-
-                    <li class="card-item">
-                      <strong>3</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>3450</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
-                      <span>Square Ft</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-footer">
-
-                  <div class="card-author">
-
-                    <figure class="author-avatar">
-                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
-                    </figure>
-
-                    <div>
-                      <p class="author-name">
-                        <a href="#">William Seklo</a>
-                      </p>
-
-                      <p class="author-title">Estate Agents</p>
-                    </div>
-
-                  </div>
-
-                  <div class="card-footer-actions">
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="resize-outline"></ion-icon>
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="add-circle-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="property-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/property-3.jpg" alt="Comfortable Apartment" class="w-100">
-                  </a>
-
-                  <div class="card-badge green">For Rent</div>
-
-                  <div class="banner-actions">
-
-                    <button class="banner-actions-btn">
-                      <ion-icon name="location"></ion-icon>
-
-                      <address>Belmont Gardens, Chicago</address>
-                    </button>
-
-                    <button class="banner-actions-btn">
-                      <ion-icon name="camera"></ion-icon>
-
-                      <span>4</span>
-                    </button>
-
-                    <button class="banner-actions-btn">
-                      <ion-icon name="film"></ion-icon>
-
-                      <span>2</span>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-price">
-                    <strong>$34,900</strong>/Month
-                  </div>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Comfortable Apartment</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
-                  </p>
-
-                  <ul class="card-list">
-
-                    <li class="card-item">
-                      <strong>3</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>3450</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
-                      <span>Square Ft</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-footer">
-
-                  <div class="card-author">
-
-                    <figure class="author-avatar">
-                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
-                    </figure>
-
-                    <div>
-                      <p class="author-name">
-                        <a href="#">William Seklo</a>
-                      </p>
-
-                      <p class="author-title">Estate Agents</p>
-                    </div>
-
-                  </div>
-
-                  <div class="card-footer-actions">
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="resize-outline"></ion-icon>
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="add-circle-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="property-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/property-4.png" alt="Luxury villa in Rego Park" class="w-100">
-                  </a>
-
-                  <div class="card-badge green">For Rent</div>
-
-                  <div class="banner-actions">
-
-                    <button class="banner-actions-btn">
-                      <ion-icon name="location"></ion-icon>
-
-                      <address>Belmont Gardens, Chicago</address>
-                    </button>
-
-                    <button class="banner-actions-btn">
-                      <ion-icon name="camera"></ion-icon>
-
-                      <span>4</span>
-                    </button>
-
-                    <button class="banner-actions-btn">
-                      <ion-icon name="film"></ion-icon>
-
-                      <span>2</span>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-price">
-                    <strong>$34,900</strong>/Month
-                  </div>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Luxury villa in Rego Park</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
-                  </p>
-
-                  <ul class="card-list">
-
-                    <li class="card-item">
-                      <strong>3</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>3450</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
-                      <span>Square Ft</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-footer">
-
-                  <div class="card-author">
-
-                    <figure class="author-avatar">
-                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
-                    </figure>
-
-                    <div>
-                      <p class="author-name">
-                        <a href="#">William Seklo</a>
-                      </p>
-
-                      <p class="author-title">Estate Agents</p>
-                    </div>
-
-                  </div>
-
-                  <div class="card-footer-actions">
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="resize-outline"></ion-icon>
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="add-circle-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #FEATURES
-      -->
-
-      <section class="features">
-        <div class="container">
-
-          <p class="section-subtitle">Our Aminities</p>
-
-          <h2 class="h2 section-title">Building Aminities</h2>
-
-          <ul class="features-list">
-
-            <li>
-              <a href="#" class="features-card">
-
-                <div class="card-icon">
-                  <ion-icon name="car-sport-outline"></ion-icon>
-                </div>
-
-                <h3 class="card-title">Parking Space</h3>
-
-                <div class="card-btn">
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </div>
-
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="features-card">
-
-                <div class="card-icon">
-                  <ion-icon name="water-outline"></ion-icon>
-                </div>
-
-                <h3 class="card-title">Swimming Pool</h3>
-
-                <div class="card-btn">
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </div>
-
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="features-card">
-
-                <div class="card-icon">
-                  <ion-icon name="shield-checkmark-outline"></ion-icon>
-                </div>
-
-                <h3 class="card-title">Private Security</h3>
-
-                <div class="card-btn">
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </div>
-
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="features-card">
-
-                <div class="card-icon">
-                  <ion-icon name="fitness-outline"></ion-icon>
-                </div>
-
-                <h3 class="card-title">Medical Center</h3>
-
-                <div class="card-btn">
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </div>
-
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="features-card">
-
-                <div class="card-icon">
-                  <ion-icon name="library-outline"></ion-icon>
-                </div>
-
-                <h3 class="card-title">Library Area</h3>
-
-                <div class="card-btn">
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </div>
-
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="features-card">
-
-                <div class="card-icon">
-                  <ion-icon name="bed-outline"></ion-icon>
-                </div>
-
-                <h3 class="card-title">King Size Beds</h3>
-
-                <div class="card-btn">
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </div>
-
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="features-card">
-
-                <div class="card-icon">
-                  <ion-icon name="home-outline"></ion-icon>
-                </div>
-
-                <h3 class="card-title">Smart Homes</h3>
-
-                <div class="card-btn">
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </div>
-
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="features-card">
-
-                <div class="card-icon">
-                  <ion-icon name="football-outline"></ion-icon>
-                </div>
-
-                <h3 class="card-title">Kid’s Playland</h3>
-
-                <div class="card-btn">
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <section class="blog" id="blog">
-        <div class="container">
-
-          <p class="section-subtitle">News & Blogs</p>
-
-          <h2 class="h2 section-title">Leatest News Feeds</h2>
-
-          <ul class="blog-list has-scrollbar">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-1.png" alt="The Most Inspiring Interior Design Of 2021" class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>by: Admin</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>Interior</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">The Most Inspiring Interior Design Of 2021</a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">Apr 27, 2022</time>
-                    </div>
-
-                    <a href="#" class="read-more-btn">Read More</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-2.jpg" alt="Recent Commercial Real Estate Transactions" class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>by: Admin</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>Estate</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">Recent Commercial Real Estate Transactions</a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">Apr 27, 2022</time>
-                    </div>
-
-                    <a href="#" class="read-more-btn">Read More</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-3.jpg" alt="Renovating a Living Room? Experts Share Their Secrets"
-                    class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>by: Admin</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>Room</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">Renovating a Living Room? Experts Share Their Secrets</a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">Apr 27, 2022</time>
-                    </div>
-
-                    <a href="#" class="read-more-btn">Read More</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #CTA
-      -->
-
-      <section class="cta">
-        <div class="container">
-
-          <div class="cta-card">
-            <div class="card-content">
-              <h2 class="h2 card-title">Looking for a dream home?</h2>
-
-              <p class="card-text">We can help you realize your dream of a new home</p>
             </div>
-
-            <button class="btn cta-btn">
-              <span>Explore Properties</span>
-
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </button>
           </div>
-
         </div>
-      </section>
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-
-    <div class="footer-top">
-      <div class="container">
-
-        <div class="footer-brand">
-
-          <a href="#" class="logo">
-            <img src="./assets/images/logo-light.png" alt="Homeverse logo">
-          </a>
-
-          <p class="section-text">
-            Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.
-          </p>
-
-          <ul class="contact-list">
-
-            <li>
-              <a href="#" class="contact-link">
-                <ion-icon name="location-outline"></ion-icon>
-
-                <address>Brooklyn, New York, United States</address>
-              </a>
-            </li>
-
-            <li>
-              <a href="tel:+0123456789" class="contact-link">
-                <ion-icon name="call-outline"></ion-icon>
-
-                <span>+0123-456789</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="mailto:contact@homeverse.com" class="contact-link">
-                <ion-icon name="mail-outline"></ion-icon>
-
-                <span>contact@homeverse.com</span>
-              </a>
-            </li>
-
-          </ul>
-
-          <ul class="social-list">
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-
-        <div class="footer-link-box">
-
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">Company</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">About</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Blog</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">All Products</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Locations Map</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">FAQ</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Contact us</a>
-            </li>
-
-          </ul>
-
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">Services</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Order tracking</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Wish List</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Login</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">My account</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Terms & Conditions</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Promotional Offers</a>
-            </li>
-
-          </ul>
-
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">Customer Care</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Login</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">My account</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Wish List</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Order tracking</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">FAQ</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Contact us</a>
-            </li>
-
-          </ul>
-
-        </div>
-
       </div>
     </div>
+  </header>
+  <!-- End header section -->
 
-    <div class="footer-bottom">
+  <!-- Start menu section -->
+  <section id="aa-menu-area">
+    <nav class="navbar navbar-default main-navbar" role="navigation">
       <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->
+          <!-- Text based logo -->
+          <a class="navbar-brand aa-logo" href="index.html"> Home <span>Property</span></a>
+          <!-- Image based logo -->
+          <!-- <a class="navbar-brand aa-logo-img" href="index.html"><img src="img/logo.png" alt="logo"></a> -->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
+            <li class="active"><a href="index.html">HOME</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="properties.html">PROPERTIES <span
+                  class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="properties.html">PROPERTIES</a></li>
+                <li><a href="properties-detail.html">PROPERTIES DETAIL</a></li>
+              </ul>
+            </li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html">BLOG <span
+                  class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="blog-archive.html">BLOG</a></li>
+                <li><a href="blog-single.html">BLOG DETAILS</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="404.html">404 PAGE</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </section>
+  <!-- End menu section -->
 
-        <p class="copyright">
-          &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
-        </p>
-
+  <!-- Start slider  -->
+  <section id="aa-slider">
+    <div class="aa-slider-area">
+      <!-- Top slider -->
+      <div class="aa-top-slider">
+        <!-- Top slider single slide -->
+        <div class="aa-top-slider-single">
+          <img src="img/slider/slider_1.jpg" alt="img">
+          <!-- Top slider content -->
+          <div class="aa-top-slider-content">
+            <span class="aa-top-slider-catg">Duplex</span>
+            <h2 class="aa-top-slider-title">1560 Square Feet</h2>
+            <p class="aa-top-slider-location"><i class="fa fa-map-marker"></i>South Beach, Miami (USA)</p>
+            <span class="aa-top-slider-off">30% OFF</span>
+            <p class="aa-top-slider-price">$460,000</p>
+            <a href="#" class="aa-top-slider-btn">Read More <span class="fa fa-angle-double-right"></span></a>
+          </div>
+          <!-- / Top slider content -->
+        </div>
+        <!-- / Top slider single slide -->
+        <!-- Top slider single slide -->
+        <div class="aa-top-slider-single">
+          <img src="img/slider/slider_2.jpg" alt="img">
+          <!-- Top slider content -->
+          <div class="aa-top-slider-content">
+            <span class="aa-top-slider-catg">Duplex</span>
+            <h2 class="aa-top-slider-title">1560 Square Feet</h2>
+            <p class="aa-top-slider-location"><i class="fa fa-map-marker"></i>South Beach, Miami (USA)</p>
+            <span class="aa-top-slider-off">30% OFF</span>
+            <p class="aa-top-slider-price">$460,000</p>
+            <a href="#" class="aa-top-slider-btn">Read More <span class="fa fa-angle-double-right"></span></a>
+          </div>
+          <!-- / Top slider content -->
+        </div>
+        <!-- / Top slider single slide -->
+        <!-- Top slider single slide -->
+        <div class="aa-top-slider-single">
+          <img src="img/slider/slider_4.jpg" alt="img">
+          <!-- Top slider content -->
+          <div class="aa-top-slider-content">
+            <span class="aa-top-slider-catg">Duplex</span>
+            <h2 class="aa-top-slider-title">1560 Square Feet</h2>
+            <p class="aa-top-slider-location"><i class="fa fa-map-marker"></i>South Beach, Miami (USA)</p>
+            <span class="aa-top-slider-off">30% OFF</span>
+            <p class="aa-top-slider-price">$460,000</p>
+            <a href="#" class="aa-top-slider-btn">Read More <span class="fa fa-angle-double-right"></span></a>
+          </div>
+          <!-- / Top slider content -->
+        </div>
       </div>
     </div>
+  </section>
+  <!-- End slider  -->
 
+  <!-- Advance Search -->
+  <section id="aa-advance-search">
+    <div class="container">
+      <div class="aa-advance-search-area">
+        <div class="form">
+          <div class="aa-advance-search-top">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="aa-single-advance-search">
+                  <input type="text" placeholder="Type Your Location">
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="aa-single-advance-search">
+                  <select>
+                    <option value="0" selected>Category</option>
+                    <option value="1">Flat</option>
+                    <option value="2">Land</option>
+                    <option value="3">Plot</option>
+                    <option value="4">Commercial</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="aa-single-advance-search">
+                  <select>
+                    <option value="0" selected>Type</option>
+                    <option value="1">Flat</option>
+                    <option value="2">Land</option>
+                    <option value="3">Plot</option>
+                    <option value="4">Commercial</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="aa-single-advance-search">
+                  <select>
+                    <option value="0" selected>Type</option>
+                    <option value="1">Flat</option>
+                    <option value="2">Land</option>
+                    <option value="3">Plot</option>
+                    <option value="4">Commercial</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="aa-single-advance-search">
+                  <input class="aa-search-btn" type="submit" value="Search">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="aa-advance-search-bottom">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="aa-single-filter-search">
+                  <span>AREA (SQ)</span>
+                  <span>FROM</span>
+                  <span id="skip-value-lower" class="example-val">30.00</span>
+                  <span>TO</span>
+                  <span id="skip-value-upper" class="example-val">100.00</span>
+                  <div id="aa-sqrfeet-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="aa-single-filter-search">
+                  <span>PRICE ($)</span>
+                  <span>FROM</span>
+                  <span id="skip-value-lower2" class="example-val">30.00</span>
+                  <span>TO</span>
+                  <span id="skip-value-upper2" class="example-val">100.00</span>
+                  <div id="aa-price-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Advance Search -->
+
+  <!-- About us -->
+  <section id="aa-about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-about-us-area">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="aa-about-us-left">
+                  <img src="img/about/about_1.gif" alt="image">
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="aa-about-us-right">
+                  <div class="aa-title">
+                    <h2>About Us</h2>
+                    <span></span>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ab dignissimos vitae maxime
+                    adipisci blanditiis rerum quae quos! Id at rerum maxime modi fugit vero corrupti, ad atque sit
+                    laborum ipsum sunt blanditiis suscipit odio, aut nostrum assumenda nobis rem a maiores temporibus
+                    non commodi laboriosam, doloremque expedita! Corporis, provident?</p>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, blanditiis.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, blanditiis.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / About us -->
+
+  <!-- Latest property -->
+  <section id="aa-latest-property">
+    <div class="container">
+      <div class="aa-latest-property-area">
+        <div class="aa-title">
+          <h2>Latest Properties</h2>
+          <span></span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sit ea nobis quae vero voluptatibus.</p>
+        </div>
+        <div class="aa-latest-properties-content">
+          <div class="row">
+            <div class="col-md-4">
+              <article class="aa-properties-item">
+                <a href="#" class="aa-properties-item-img">
+                  <img src="img/item/card_1.jpg" alt="img">
+                </a>
+                <div class="aa-tag for-sale">
+                  For Sale
+                </div>
+                <div class="aa-properties-item-content">
+                  <div class="aa-properties-info">
+                    <span>5 Rooms</span>
+                    <span>2 Beds</span>
+                    <span>3 Baths</span>
+                    <span>1100 SQ FT</span>
+                  </div>
+                  <div class="aa-properties-about">
+                    <h3><a href="#">Appartment Title</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae vero ducimus quibusdam
+                      odit vitae.</p>
+                  </div>
+                  <div class="aa-properties-detial">
+                    <span class="aa-price">
+                      &#8377;35000/-
+                    </span>
+                    <a href="#" class="aa-secondary-btn">View Details</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="aa-properties-item">
+                <a href="#" class="aa-properties-item-img">
+                  <img src="img/item/card_2.jpg" alt="img">
+                </a>
+                <div class="aa-tag for-rent">
+                  For Rent
+                </div>
+                <div class="aa-properties-item-content">
+                  <div class="aa-properties-info">
+                    <span>5 Rooms</span>
+                    <span>2 Beds</span>
+                    <span>3 Baths</span>
+                    <span>1100 SQ FT</span>
+                  </div>
+                  <div class="aa-properties-about">
+                    <h3><a href="#">Appartment Title</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae vero ducimus quibusdam
+                      odit vitae.</p>
+                  </div>
+                  <div class="aa-properties-detial">
+                    <span class="aa-price">
+                      &#8377;11000/-
+                    </span>
+                    <a href="#" class="aa-secondary-btn">View Details</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="aa-properties-item">
+                <a href="#" class="aa-properties-item-img">
+                  <img src="img/item/card_3.jpg" alt="img">
+                </a>
+                <div class="aa-tag sold-out">
+                  Sold Out
+                </div>
+                <div class="aa-properties-item-content">
+                  <div class="aa-properties-info">
+                    <span>5 Rooms</span>
+                    <span>2 Beds</span>
+                    <span>3 Baths</span>
+                    <span>1100 SQ FT</span>
+                  </div>
+                  <div class="aa-properties-about">
+                    <h3><a href="#">Appartment Title</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae vero ducimus quibusdam
+                      odit vitae.</p>
+                  </div>
+                  <div class="aa-properties-detial">
+                    <span class="aa-price">
+                      &#8377;15000/-
+                    </span>
+                    <a href="#" class="aa-secondary-btn">View Details</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="aa-properties-item">
+                <a href="#" class="aa-properties-item-img">
+                  <img src="img/item/card_4.jpg" alt="img">
+                </a>
+                <div class="aa-tag for-sale">
+                  For Sale
+                </div>
+                <div class="aa-properties-item-content">
+                  <div class="aa-properties-info">
+                    <span>5 Rooms</span>
+                    <span>2 Beds</span>
+                    <span>3 Baths</span>
+                    <span>1100 SQ FT</span>
+                  </div>
+                  <div class="aa-properties-about">
+                    <h3><a href="#">Appartment Title</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae vero ducimus quibusdam
+                      odit vitae.</p>
+                  </div>
+                  <div class="aa-properties-detial">
+                    <span class="aa-price">
+                      &#8377;35000/-
+                    </span>
+                    <a href="#" class="aa-secondary-btn">View Details</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="aa-properties-item">
+                <a href="#" class="aa-properties-item-img">
+                  <img src="img/item/card_5.jpg" alt="img">
+                </a>
+                <div class="aa-tag sold-out">
+                  Sold Out
+                </div>
+                <div class="aa-properties-item-content">
+                  <div class="aa-properties-info">
+                    <span>5 Rooms</span>
+                    <span>2 Beds</span>
+                    <span>3 Baths</span>
+                    <span>1100 SQ FT</span>
+                  </div>
+                  <div class="aa-properties-about">
+                    <h3><a href="#">Appartment Title</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae vero ducimus quibusdam
+                      odit vitae.</p>
+                  </div>
+                  <div class="aa-properties-detial">
+                    <span class="aa-price">
+                      &#8377;11000/-
+                    </span>
+                    <a href="#" class="aa-secondary-btn">View Details</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="aa-properties-item">
+                <a href="#" class="aa-properties-item-img">
+                  <img src="img/item/card_6.jpg" alt="img">
+                </a>
+                <div class="aa-tag for-rent">
+                  For Rent
+                </div>
+                <div class="aa-properties-item-content">
+                  <div class="aa-properties-info">
+                    <span>5 Rooms</span>
+                    <span>2 Beds</span>
+                    <span>3 Baths</span>
+                    <span>1100 SQ FT</span>
+                  </div>
+                  <div class="aa-properties-about">
+                    <h3><a href="#">Appartment Title</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae vero ducimus quibusdam
+                      odit vitae.</p>
+                  </div>
+                  <div class="aa-properties-detial">
+                    <span class="aa-price">
+                      &#8377;15000/-
+                    </span>
+                    <a href="#" class="aa-secondary-btn">View Details</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Latest property -->
+
+  <!-- Service section -->
+  <section id="aa-service">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-service-area">
+            <div class="aa-title">
+              <h2>Our Service</h2>
+              <span></span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sit ea nobis quae vero voluptatibus.</p>
+            </div>
+            <!-- service content -->
+            <div class="aa-service-content">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="aa-single-service">
+                    <div class="aa-service-icon">
+                      <span class="fa fa-home"></span>
+                    </div>
+                    <div class="aa-single-service-content">
+                      <h4><a href="#">Property Sale</a></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellendus quasi asperiores
+                        itaque dolorem at.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="aa-single-service">
+                    <div class="aa-service-icon">
+                      <span class="fa fa-check"></span>
+                    </div>
+                    <div class="aa-single-service-content">
+                      <h4><a href="#">Property Rent</a></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellendus quasi asperiores
+                        itaque dolorem at.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="aa-single-service">
+                    <div class="aa-service-icon">
+                      <span class="fa fa-crosshairs"></span>
+                    </div>
+                    <div class="aa-single-service-content">
+                      <h4><a href="#">Property Development</a></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellendus quasi asperiores
+                        itaque dolorem at.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="aa-single-service">
+                    <div class="aa-service-icon">
+                      <span class="fa fa-bar-chart-o"></span>
+                    </div>
+                    <div class="aa-single-service-content">
+                      <h4><a href="#">Market Analysis</a></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellendus quasi asperiores
+                        itaque dolorem at.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Service section -->
+
+  <!-- Promo Banner Section -->
+  <section id="aa-promo-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-promo-banner-area">
+            <h3>Find Your Best Property</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex illum corporis quibusdam numquam
+              quisquam optio explicabo. Officiis odit quia odio dignissimos eius repellat id!</p>
+            <a href="#" class="aa-view-btn">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Promo Banner Section -->
+
+  <!-- Our Agent Section-->
+  <section id="aa-agents">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-agents-area">
+            <div class="aa-title">
+              <h2>Our Agents</h2>
+              <span></span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sit ea nobis quae vero voluptatibus.</p>
+            </div>
+            <!-- agents content -->
+            <div class="aa-agents-content">
+              <ul class="aa-agents-slider">
+                <li>
+                  <div class="aa-single-agents">
+                    <div class="aa-agents-img">
+                      <img src="img/agents/agent_1.jpg" alt="agent member image">
+                    </div>
+                    <div class="aa-agetns-info">
+                      <h4><a href="#">Philip Smith</a></h4>
+                      <span>Top Agent</span>
+                      <!-- <div class="aa-agent-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                      </div> -->
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="aa-single-agents">
+                    <div class="aa-agents-img">
+                      <img src="img/agents/agent_2.jpg" alt="agent member image">
+                    </div>
+                    <div class="aa-agetns-info">
+                      <h4><a href="#">Adam Barney</a></h4>
+                      <span>Expert Agent</span>
+                      <!-- <div class="aa-agent-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                      </div> -->
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="aa-single-agents">
+                    <div class="aa-agents-img">
+                      <img src="img/agents/agent_3.jpg" alt="agent member image">
+                    </div>
+                    <div class="aa-agetns-info">
+                      <h4><a href="#">Paul Walker</a></h4>
+                      <span>Director</span>
+                      <!-- <div class="aa-agent-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                      </div> -->
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="aa-single-agents">
+                    <div class="aa-agents-img">
+                      <img src="img/agents/agent_4.jpg" alt="agent member image">
+                    </div>
+                    <div class="aa-agetns-info">
+                      <h4><a href="#">John Smith</a></h4>
+                      <span>Jr. Agent</span>
+                      <!-- <div class="aa-agent-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                      </div> -->
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="aa-single-agents">
+                    <div class="aa-agents-img">
+                      <img src="img/agents/agent_5.jpg" alt="agent member image">
+                    </div>
+                    <div class="aa-agetns-info">
+                      <h4><a href="#">Philip Smith</a></h4>
+                      <span>Top Agent</span>
+                      <!-- <div class="aa-agent-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                      </div> -->
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="aa-single-agents">
+                    <div class="aa-agents-img">
+                      <img src="img/agents/agent_6.jpg" alt="agent member image">
+                    </div>
+                    <div class="aa-agetns-info">
+                      <h4><a href="#">Philip Smith</a></h4>
+                      <span>Top Agent</span>
+                      <!-- <div class="aa-agent-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                      </div> -->
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Our Agent Section-->
+
+  <!-- Client Testimonial -->
+  <section id="aa-client-testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-client-testimonial-area">
+            <div class="aa-title">
+              <h2>What Client Say</h2>
+              <span></span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus eaque quas debitis animi
+                ipsum, veritatis!</p>
+            </div>
+            <!-- testimonial content -->
+            <div class="aa-testimonial-content">
+              <!-- testimonial slider -->
+              <ul class="aa-testimonial-slider">
+                <li>
+                  <div class="aa-testimonial-single">
+                    <div class="aa-testimonial-img">
+                      <img src="img/agents/agent_1.jpg" alt="testimonial img">
+                    </div>
+                    <div class="aa-testimonial-info">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequuntur ducimus
+                        cumque iure modi nesciunt recusandae eligendi vitae voluptatibus, voluptatum tempore, ipsum nisi
+                        perspiciatis. Rerum nesciunt fuga ab natus, dolorem?</p>
+                    </div>
+                    <div class="aa-testimonial-bio">
+                      <p>David Muller</p>
+                      <span>Web Designer</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="aa-testimonial-single">
+                    <div class="aa-testimonial-img">
+                      <img src="img/agents/agent_2.jpg" alt="testimonial img">
+                    </div>
+                    <div class="aa-testimonial-info">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequuntur ducimus
+                        cumque iure modi nesciunt recusandae eligendi vitae voluptatibus, voluptatum tempore, ipsum nisi
+                        perspiciatis. Rerum nesciunt fuga ab natus, dolorem?</p>
+                    </div>
+                    <div class="aa-testimonial-bio">
+                      <p>David Muller</p>
+                      <span>Web Designer</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="aa-testimonial-single">
+                    <div class="aa-testimonial-img">
+                      <img src="img/agents/agent_3.jpg" alt="testimonial img">
+                    </div>
+                    <div class="aa-testimonial-info">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequuntur ducimus
+                        cumque iure modi nesciunt recusandae eligendi vitae voluptatibus, voluptatum tempore, ipsum nisi
+                        perspiciatis. Rerum nesciunt fuga ab natus, dolorem?</p>
+                    </div>
+                    <div class="aa-testimonial-bio">
+                      <p>David Muller</p>
+                      <span>Web Designer</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Client Testimonial -->
+
+  <!-- Client brand -->
+  <section id="aa-client-brand">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-client-brand-area">
+            <ul class="aa-client-brand-slider">
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="img/client-brand-1.png" alt="brand image">
+                </div>
+              </li>
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="img/client-brand-2.png" alt="brand image">
+                </div>
+              </li>
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="img/client-brand-3.png" alt="brand image">
+                </div>
+              </li>
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="img/client-brand-5.png" alt="brand image">
+                </div>
+              </li>
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="img/client-brand-4.png" alt="brand image">
+                </div>
+              </li>
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="img/client-brand-1.png" alt="brand image">
+                </div>
+              </li>
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="img/client-brand-2.png" alt="brand image">
+                </div>
+              </li>
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="img/client-brand-3.png" alt="brand image">
+                </div>
+              </li>
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="img/client-brand-5.png" alt="brand image">
+                </div>
+              </li>
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="img/client-brand-4.png" alt="brand image">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Client brand -->
+
+  <!-- Latest blog -->
+  <section id="aa-latest-blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-latest-blog-area">
+            <div class="aa-title">
+              <h2>Latest News</h2>
+              <span></span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe magni, est harum repellendus.
+                Accusantium, nostrum!</p>
+            </div>
+            <div class="aa-latest-blog-content">
+              <div class="row">
+                <!-- start single blog -->
+                <div class="col-md-4">
+                  <article class="aa-blog-single">
+                    <figure class="aa-blog-img">
+                      <a href="#"><img src="img/slider/slider_1.jpg" alt="img"></a>
+                      <span class="aa-date-tag">01 July, 12</span>
+                    </figure>
+                    <div class="aa-blog-single-content">
+                      <h3><a href="#">Lorem ipsum dolor sit amet, consectetur.</a></h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est quaerat magnam
+                        exercitationem voluptas, voluptatem sed quam ab laborum voluptatum tempore dolores itaque,
+                        molestias vitae.</p>
+                      <div class="aa-blog-single-bottom">
+                        <a href="#" class="aa-blog-author"><i class="fa fa-user"></i> Admin</a>
+                        <a href="#" class="aa-blog-comments"><i class="fa fa-comment-o"></i>6</a>
+                      </div>
+                    </div>
+
+                  </article>
+                </div>
+                <!-- start single blog -->
+                <div class="col-md-4">
+                  <article class="aa-blog-single">
+                    <figure class="aa-blog-img">
+                      <a href="#"><img src="img/slider/slider_2.jpg" alt="img"></a>
+                      <span class="aa-date-tag">15 April, 16</span>
+                    </figure>
+                    <div class="aa-blog-single-content">
+                      <h3><a href="#">Lorem ipsum dolor sit amet, consectetur.</a></h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est quaerat magnam
+                        exercitationem voluptas, voluptatem sed quam ab laborum voluptatum tempore dolores itaque,
+                        molestias vitae.</p>
+                      <div class="aa-blog-single-bottom">
+                        <a href="#" class="aa-blog-author"><i class="fa fa-user"></i> Admin</a>
+                        <a href="#" class="aa-blog-comments"><i class="fa fa-comment-o"></i>6</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <!-- start single blog -->
+                <div class="col-md-4">
+                  <article class="aa-blog-single">
+                    <figure class="aa-blog-img">
+                      <a href="#"><img src="img/slider/slider_3.jpg" alt="img"></a>
+                      <span class="aa-date-tag">18 January, 29</span>
+                    </figure>
+                    <div class="aa-blog-single-content">
+                      <h3><a href="#">Lorem ipsum dolor sit amet, consectetur.</a></h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est quaerat magnam
+                        exercitationem voluptas, voluptatem sed quam ab laborum voluptatum tempore dolores itaque,
+                        molestias vitae.</p>
+                      <div class="aa-blog-single-bottom">
+                        <a href="#" class="aa-blog-author"><i class="fa fa-user"></i> Admin</a>
+                        <a href="#" class="aa-blog-comments"><i class="fa fa-comment-o"></i>6</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Latest blog -->
+
+  <!-- Footer -->
+
+  <footer id="aa-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-footer-area">
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="aa-footer-left">
+                  <p>Designed by <a rel="nofollow" href="#">| Brightcode Company</a></p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="aa-footer-middle">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="aa-footer-right">
+                  <a href="#">Home</a>
+                  <a href="#">Support</a>
+                  <a href="#">License</a>
+                  <a href="#">FAQ</a>
+                  <a href="#">Privacy & Term</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
+  <!-- / Footer -->
 
 
 
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- jQuery library -->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>
+  <!-- slick slider -->
+  <script type="text/javascript" src="js/slick.js"></script>
+  <!-- Price picker slider -->
+  <script type="text/javascript" src="js/nouislider.js"></script>
+  <!-- mixit slider -->
+  <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+  <!-- Custom js -->
+  <script src="js/custom.js"></script>
 
 </body>
 
